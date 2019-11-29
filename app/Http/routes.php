@@ -11,6 +11,9 @@
 |
 */
 
+Route::get('auth/login', 'Auth\AuthController@getLogin');
+Route::post('auth/login', 'Auth\AuthController@postLogin');
+
 Route::get('/', function () {
     return view('Home');
 });
@@ -31,3 +34,7 @@ Route::get('/contact', function () {
     return view('Contact');
 });
 
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
