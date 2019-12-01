@@ -68,6 +68,7 @@
                                     <i class="fa fa-btn fa-sign-in"></i> Авторизация
                                 </button>
 
+                              
                                 <a class="btn btn-link" href="{{ url('/password/reset') }}">Забыли пароль?</a>
                             </div>
                         </div>

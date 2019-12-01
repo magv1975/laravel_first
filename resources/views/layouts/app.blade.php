@@ -16,13 +16,13 @@
     {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
 
     <style>
-        body {
+/*        body {
             font-family: 'Lato';
         }
 
         .fa-btn {
             margin-right: 6px;
-        }
+        }*/
     </style>
 </head>
 <body id="app-layout">
@@ -56,7 +56,7 @@
                     <!-- Authentication Links -->
                     @if (Auth::guest())
                         <li><a href="{{ url('/login') }}">Авторизация</a></li>
-<!--                        <li><a href="{{ url('/register') }}">Регистрация</a></li>-->
+                        <li><a href="{{ url('/register') }}">Регистрация</a></li>
                     @else
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
