@@ -14,25 +14,15 @@
 Route::get('auth/login', 'Auth\AuthController@getLogin');
 Route::post('auth/login', 'Auth\AuthController@postLogin');
 
-Route::get('/', function () {
-    return view('Home');
-});
+Route::get('/', 'HomeController@index');
 
-Route::get('/home', function () {
-    return view('Home');
-});
+Route::get('/home', 'HomeController@index');
 
-Route::get('/product', function () {
-    return view('Product');
-});
+Route::get('/product', 'ProductController@index');
 
-Route::get('/order', function () {
-    return view('Order');
-});
+Route::get('/order', 'OrderController@index');
 
-Route::get('/contact', function () {
-    return view('Contact');
-});
+Route::get('/contact', 'ContactController@index');
 
 
 Route::auth();
