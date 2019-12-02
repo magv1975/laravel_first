@@ -56,7 +56,7 @@
                             <label for="text" class="col-md-4 control-label">Информация</label>
 
                             <div class="col-md-6">
-                                <textarea rows="20" class="form-control" name="info"></textarea>
+                                <textarea rows="15" class="form-control" name="info"></textarea>
                             </div>
                         </div>
 

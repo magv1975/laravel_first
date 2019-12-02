@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('auth/login', 'Auth\AuthController@getLogin');
-Route::post('auth/login', 'Auth\AuthController@postLogin');
+Route::get('admin', 'Auth\AuthController@getLogin');
+Route::post('admin', 'Auth\AuthController@postLogin');
 
 Route::get('/', 'HomeController@index');
 
@@ -26,5 +26,3 @@ Route::get('/contact', 'ContactController@index');
 
 
 Route::auth();
-
-Route::get('/home', 'HomeController@index');
