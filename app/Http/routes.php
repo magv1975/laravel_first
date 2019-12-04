@@ -18,7 +18,7 @@ Route::get('/', 'HomeController@index');
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/product', 'ProductController@index');
+Route::get('/product', 'ImageGalleryController@index');
 
 Route::get('/order', 'OrderController@index');
 
@@ -26,3 +26,7 @@ Route::get('/contact', 'ContactController@index');
 
 
 Route::auth();
+
+Route::get('/image-gallery', 'ImageGalleryController@index');
+Route::post('/image-gallery', 'ImageGalleryController@upload');
+Route::delete('/image-gallery/{id}', 'ImageGalleryController@destroy');
